@@ -1,22 +1,25 @@
-#include <stdio.h>//FICHERO DE CABECERA
-int main() {
-    int x[10];
-    int cont;
-    float suma=0;
-    float media;
-    for(cont=0;cont<10;cont++){//numero empezamos;hasta que numero;de cuanto en cuanto sumamos
-    // cont++=cont+1
-        printf("dame un numero: ");
-        scanf("%d",&x[cont]);
-    }
-    // Escribo datos en la pantalla
-    for(cont=0;cont<10;cont++){
-        printf("\n%d",x[cont]);
-        suma=suma+x[cont];
-        //Suma=+x[cont];
-    }
-    media=suma/cont;
-    printf("\nLa MEDIA VALE= %.2f",media);
-    //Donde pone %d ahi saldra lo que queramos que salga
-    return (0);
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+int main(){
+	int x[5];
+	int cont;
+	float suma=0.0;
+	for(cont=0;cont<5;cont++){
+		printf("Dame un numero: ");
+		scanf("%d",&x[cont]);
+	}
+	
+	for(cont=0;cont<5;cont++){
+		printf("\n%d",x[cont]);
+		suma=suma+x[cont];
+	}
+	
+	float media=(suma/5.0);
+	
+	printf("\nLa suma es igual a %f",suma);
+	printf("\nLa media es igual a %f",media);
+	
+	return(0);
 }
