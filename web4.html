@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{font:verdana;color:red;}
+</style>
+<body>
+<h2>PÁGINA EN JAVASCRIPT</h2>
+<p>Siendo x = 5, y = 2, z = x + y</p>
+<p>z:</p>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("dem").innerHTML = "Párrafo cambiado";
+}
+let x = 5;
+let y = 2;
+let z = x + y;
+document.getElementById("demo").innerHTML = z;
+</script>
+
+<p id="dem">Un párrafo</p>
+
+<button type="button" onclick="myFunction()">Pulse para cambiar el párrafo</button>
+</body>
+</html>
