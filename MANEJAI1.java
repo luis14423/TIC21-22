@@ -49,6 +49,35 @@ public class MANEJAI1 {
 					}
 					x=x+1;
 				}
+		//PRIMOS
+			int x=1;
+			int z=1;
+			for(x=1;x<101;x++){
+				int y=(int) Math.sqrt(x);
+				int contador=0;
+				for(z=y;z>1;z--) {
+					if(x%z==0) {
+						contador++;
+					}
+				}
+				
+				if(contador<1) {
+					System.out.println(x);
+				}
+			}
+			
+			//CONTADOR DE LETRAS
+			String cadena="La lluvia en Sevilla es una pura maravilla";
+			int x;
+			int contador=0;
+			for(x=0;x<cadena.length();x++) {
+				if(cadena.charAt(x)=='a') {
+					contador++;
+				}
+			}
+			
+			//REEMPLAZADOR DE LETRAS
+			System.out.println(cadena.replace('a', 'e'));
 		
 		
         
