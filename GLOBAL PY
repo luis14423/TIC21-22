@@ -1,0 +1,62 @@
+def f():
+    x=input("Introduce un numero: ")
+    x=int(x)
+    p=2*x-1
+    p=float(p)
+    for cont in range(1,2*x,2):
+        x=(p-float(cont))/2.0
+        x=int(x)
+        print("_"*x+"*"*cont+"_"*x)
+f()
+
+def f():
+    x=input("Precio: ")
+    x=int(x)
+    y=input("Pago: ")
+    y=int(y)
+    p=y-x
+    ACont=0
+    BCont=0
+    CCont=0
+    DCont=0
+    ECont=0
+    FCont=0
+    GCont=0
+    while(p>=200):
+        ACont=ACont+1
+        p=p-200
+        
+        
+    while(p>=100):
+        BCont=BCont+1
+        p=p-100
+        
+    while(p>=50):
+        CCont=CCont+1
+        p=p-50
+        
+    while(p>=20):
+        DCont=DCont+1
+        p=p-20
+    
+    while(p>=10):
+        ECont=ECont+1
+        p=p-10
+    
+    while(p>=5):
+        FCont=FCont+1
+        p=p-5
+        
+    while(p>=1):
+        GCont=GCont+1
+        p=p-1
+        
+    print("Billetes de 200: "+str(ACont))
+    print("Billetes de 100: "+str(BCont))
+    print("Billetes de 50: "+str(CCont))
+    print("Billetes de 20: "+str(DCont))
+    print("Billetes de 10: "+str(ECont))
+    print("Billetes de 5: "+str(FCont))
+    print("Monedas de 1: "+str(GCont))
+    
+f()
