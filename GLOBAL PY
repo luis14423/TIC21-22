@@ -60,3 +60,34 @@ def f():
     print("Monedas de 1: "+str(GCont))
     
 f()
+# Online Python compiler (interpreter) to run Python online.
+import random
+def f():
+    
+    a=random.choice(range(1,9))
+    b=random.choice(range(1,9))
+    c=random.choice(range(1,9))
+    d=random.choice(range(1,9))
+    e=random.choice(range(1,9))
+    f=random.choice(range(1,9))
+    g=random.choice(range(1,9))
+    h=random.choice(range(1,9))
+    i=random.choice(range(1,9))
+    
+    while((a*b*c*d*e*f*g*h*i)!=362.880):
+        a=random.choice(range(1,9))
+        b=random.choice(range(1,9))
+        c=random.choice(range(1,9))
+        d=random.choice(range(1,9))
+        e=random.choice(range(1,9))
+        f=random.choice(range(1,9))
+        g=random.choice(range(1,9))
+        h=random.choice(range(1,9))
+        i=random.choice(range(1,9))
+
+
+    print(str(a)+" "+str(b)+" "+str(c))
+    print(str(d)+" "+str(e)+" "+str(f))
+    print(str(g)+" "+str(h)+" "+str(i))
+    
+f()
