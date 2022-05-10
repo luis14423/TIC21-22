@@ -91,3 +91,38 @@ def f():
     print(str(g)+" "+str(h)+" "+str(i))
     
 f()
+
+#include<iostream>
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+
+
+int main() {
+    int a;
+    int b;
+    int c;
+    int d;
+    
+    printf("\nA Coor1: ");
+    scanf("%d",&a);
+    
+    printf("\nA Coor2: ");
+    scanf("%d",&b);
+    
+    printf("\nB Coor1: ");
+    scanf("%d",&c);
+    
+    printf("\nB Coor2: ");
+    scanf("%d",&d);
+    
+    printf("\nA=( %d , %d )",a,b);
+    printf("\nB=( %d , %d )",c,d);
+    
+    printf("\nVector=( %d , %d )",(c-a),(d-b));
+    
+    float m=sqrt((c-a)*(c-a)+(d-b)*(c-b));
+    printf("\nLongitud: %f ",m);
+    
+    return 0;
+}
